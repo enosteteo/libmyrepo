@@ -1,9 +1,7 @@
-# libpythonpro
-Link para o curso [Python Pro](https://www.python.pro.br/)
+# libmyrepo
 
-[![Build Status](https://travis-ci.org/enosteteo/libpythonpro.svg?branch=master)](https://travis-ci.org/enosteteo/libpythonpro)
-[![Updates](https://pyup.io/repos/github/enosteteo/libpythonpro/shield.svg)](https://pyup.io/repos/github/enosteteo/libpythonpro/)
-[![Python 3](https://pyup.io/repos/github/enosteteo/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/enosteteo/libpythonpro/)
+[![Build Status](https://travis-ci.org/enosteteo/libmyrepo.svg?branch=master)](https://travis-ci.org/enosteteo/libmyrepo)
+[![Updates](https://pyup.io/repos/github/enosteteo/libmyrepo/shield.svg)](https://pyup.io/repos/github/enosteteo/libmyrepo/)
+[![Python 3](https://pyup.io/repos/github/enosteteo/libmyrepo/python-3-shield.svg)](https://pyup.io/repos/github/enosteteo/libmyrepo/)
 
-
-Módulo para exemplificar construção de projetos Python no curso PyTools
+...
