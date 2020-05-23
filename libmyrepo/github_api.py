@@ -1,16 +1,28 @@
 import requests
 
 
-def buscar_avatar(usuario):
+def search_avatar(user):
     """
-    Busca o avatar de um usuário no Github
-    :param usuario: str com o nome de usuário no github
-    :return: srt com o link do avatar
+    Search for a user's avatar on Github
+    :param user: str with the username on github
+    :return: srt with avatar link
     """
-    url = f'https://api.github.com/users/{usuario}'
+    url = f'https://api.github.com/users/{user}'
     resp = requests.get(url)
     return resp.json()['avatar_url']
 
 
+def repos(user):
+    url = f'https://api.github.com/users/{user}/repos'
+    resp = requests.get(url)
+    name_and_url = ''
+    for i, value in enumerate(resp.json(), 0):
+        name = value['name']
+        html_url = value['html_url']
+        name_and_url += f'name: {name} | url: {html_url}\n'
+    return name_and_url
+
+
 if __name__ == '__main__':
-    print(buscar_avatar('enosteteo'))
+    print(search_avatar('enosteteo'))
+    print(repos('enosteteo'))

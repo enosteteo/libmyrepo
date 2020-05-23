@@ -94,12 +94,12 @@ def find_package_data(
     return out
 
 
-PACKAGE = "libpythonpro"
+PACKAGE = "libmyrepo"
 NAME = "libenos"
 DESCRIPTION = "Módulo para exemplificar construção de projetos Python no curso PyTools"
 AUTHOR = "Enos Tetéo"
 AUTHOR_EMAIL = "enosfrancisco@gmail.com"
-URL = "https://github.com/enosteteo/libpythonpro"
+URL = "https://github.com/enosteteo/libmyrepo"
 VERSION = __import__(PACKAGE).__version__
 
 setup(
