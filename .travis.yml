@@ -9,9 +9,12 @@ env:
     - PIPENV_IGNORE_VIRTUALENVS=1
 
 install:
-  - pip install pipenv
+  - pip install pipenv codecov
   - pipenv sync -d
 
 script:
   - pipenv run flake8 .
-  - pipenv run pytest libmyrepo
+  - pipenv run pytest libmyrepo --cov=libmyrepo
+
+after_success:
+  - codecov
