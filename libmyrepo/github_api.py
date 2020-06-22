@@ -15,6 +15,7 @@ def search_avatar(user):
 def repos(user):
     url = f'https://api.github.com/users/{user}/repos'
     resp = requests.get(url)
+    print(resp.json())
     name_and_url = ''
     for i, value in enumerate(resp.json(), 0):
         name = value['name']
@@ -24,5 +25,4 @@ def repos(user):
 
 
 if __name__ == '__main__':
-    print(search_avatar('enosteteo'))
     print(repos('enosteteo'))
